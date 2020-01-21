@@ -31,3 +31,14 @@ C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Gen
 C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.csproj.CopyComplete
 C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.dll
 C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.pdb
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\bin\Debug\netcoreapp2.2\Generico.Data.deps.json
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\bin\Debug\netcoreapp2.2\Generico.Data.dll
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\bin\Debug\netcoreapp2.2\Generico.Data.pdb
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\bin\Debug\netcoreapp2.2\Generico.Business.dll
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\bin\Debug\netcoreapp2.2\Generico.Business.pdb
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.csprojAssemblyReference.cache
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.AssemblyInfoInputs.cache
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.AssemblyInfo.cs
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.csproj.CopyComplete
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.dll
+C:\src\ProjetoClienteAvaliacoes\src\Generico.Data\obj\Debug\netcoreapp2.2\Generico.Data.pdb

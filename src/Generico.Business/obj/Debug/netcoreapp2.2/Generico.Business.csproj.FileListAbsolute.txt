@@ -14,3 +14,11 @@ C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Ge
 C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfo.cs
 C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.dll
 C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.pdb
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.deps.json
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.dll
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.pdb
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.csprojAssemblyReference.cache
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfoInputs.cache
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfo.cs
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.dll
+C:\GitHub\ProjetoClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.pdb

@@ -120,7 +120,6 @@
     <!-- end row-->
 </div>
 <!-- container -->
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -144,33 +143,39 @@
 </div>
 
 
+
 @section Scripts {
-<script>
+    <script>
 
 
-    function ExibirModal(idRecebido, nome) {
+        function ExibirModal(idRecebido, nome) {
 
-        $(".nome")[0].innerHTML = nome;
-        $(".modal").modal();
+            var t = $("input[name='__RequestVerificationToken']").val();
+            $(".nome")[0].innerHTML = nome;
+            $(".modal").modal();
 
-        $(".btnExcluir").on("click", function () {
+            $(".btnExcluir").on("click", function () {
 
-            $.ajax({
-                method: "POST",
-                url: "/Produtos/Deletar",
-                data: { id: idRecebido },
-                dataType: 'json',
-                contentType: "application/json",
-                success: function (data) {
-                    console.log(data);
-                    $(".modal").modal("hide");
-                    location.reload(true);
-                }
-            })
-        });
+                $.ajax({
+                    method: "POST",
+                    headers:
+                    {
+                        "RequestVerificationToken": t
+                    },
+                    url: "/Produtos/Deletar",
+                    data: { id: idRecebido },
+                    success: function (data) {
+                        console.log(data);
+                        $(".modal").modal("hide");
+                        location.reload(true);
+                    }
+                })
+            });
 
-    };
+        };
 
 
-</script>
+    </script>
 }
+
+

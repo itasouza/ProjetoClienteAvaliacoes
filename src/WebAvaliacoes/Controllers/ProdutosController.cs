@@ -112,18 +112,13 @@ namespace WebAvaliacoes.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<JsonResult> Deletar(int id)
         {
             await _produtoRepository.Remover(id);
             return Json("Categoria excluída com sucesso");
         }
 
-
-        //[HttpPost]
-        //public JsonResult Deletar(int id)
-        //{
-        //    return Json(" excluída com sucesso");
-        //}
 
     }
 }

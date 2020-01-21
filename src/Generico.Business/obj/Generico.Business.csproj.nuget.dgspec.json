@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj": {}
+    "C:\\GitHub\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj": {}
   },
   "projects": {
-    "C:\\src\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj": {
+    "C:\\GitHub\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj",
+        "projectUniqueName": "C:\\GitHub\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj",
         "projectName": "Generico.Business",
-        "projectPath": "C:\\src\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj",
-        "packagesPath": "C:\\Users\\PCEstudo\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\obj\\",
+        "projectPath": "C:\\GitHub\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\Generico.Business.csproj",
+        "packagesPath": "C:\\Users\\isouza\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\ProjetoClienteAvaliacoes\\src\\Generico.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PCEstudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://imperiointeligencia.pkgs.visualstudio.com/_packaging/atlas_cargo/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {

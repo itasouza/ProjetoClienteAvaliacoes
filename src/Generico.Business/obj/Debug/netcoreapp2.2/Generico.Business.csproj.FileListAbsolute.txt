@@ -1,0 +1,16 @@
+C:\src\ProClienteAvaliacoes\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.deps.json
+C:\src\ProClienteAvaliacoes\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.dll
+C:\src\ProClienteAvaliacoes\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.pdb
+C:\src\ProClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.csprojAssemblyReference.cache
+C:\src\ProClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfoInputs.cache
+C:\src\ProClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfo.cs
+C:\src\ProClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.dll
+C:\src\ProClienteAvaliacoes\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.pdb
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.deps.json
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.dll
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\bin\Debug\netcoreapp2.2\Generico.Business.pdb
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.csprojAssemblyReference.cache
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfoInputs.cache
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.AssemblyInfo.cs
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.dll
+C:\src\ProClienteAvaliacoesNovo\src\Generico.Business\obj\Debug\netcoreapp2.2\Generico.Business.pdb

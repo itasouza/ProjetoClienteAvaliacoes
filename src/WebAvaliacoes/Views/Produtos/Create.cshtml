@@ -1,0 +1,157 @@
+﻿@model WebAvaliacoes.ViewModels.ProdutoViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<p>
+
+</p>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card ribbon-box">
+                <div class="card-body">
+                    <div class="ribbon ribbon-primary float-left"><i class="mdi mdi-access-point mr-1"></i> Cadastro Cidade</div>
+                    <h5 class="text-primary float-right mt-0"></h5>
+                    <div class="ribbon-content">
+
+                        <div class="col-lg-6">
+
+                            <form enctype="multipart/form-data" asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group mb-3">
+                                    <label asp-for="NomeProduto" class="control-label"></label>
+                                    <input type="text" asp-for="NomeProduto" class="form-control" />
+                                    <span asp-validation-for="NomeProduto" class="text-danger"></span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label asp-for="DescricaoProduto" class="control-label"></label>
+                                    <textarea asp-for="DescricaoProduto" class="form-control" rows="5"></textarea>
+                                    <span asp-validation-for="DescricaoProduto" class="text-danger"></span>
+                                </div>
+
+
+                                <!--foto perfil-->
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <!-- Profile -->
+                                        <div class="card">
+                                            <div class="card-body profile-user-box">
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="media">
+                                                            <span class="float-left m-2 mr-4">
+                                                                <img id="ImagemProduto" src="~/lib/images/avatar-foto.jpg"
+                                                                     alt="Foto perfil"
+                                                                     class="rounded-circle img-thumbnail">
+                                                            </span>
+                                                        </div>
+                                                    </div> <!-- end col-->
+                                                </div> <!-- end row -->
+
+                                            </div> <!-- end card-body/ profile-user-box-->
+                                        </div><!--end profile/ card -->
+                                    </div> <!-- end col-->
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="fileinput">Foto do produto</label>
+                                    <input asp-for="FotoProduto" type="file" id="ImagemProduto" class="form-control-file"
+                                           placeholder="Entre uma foto" name="arquivofoto" onchange="CarregarImagem(this)">
+                                </div>
+
+                                <!--fim de foto perfil-->
+
+                                <div class="row">
+                                    <div class="form-group col-sm-4">
+                                        <label asp-for="ValorProduto" class="control-label"></label>
+                                        <input asp-for="ValorProduto" class="form-control" />
+                                        <span asp-validation-for="ValorProduto" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group  mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" asp-for="Ativo" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"> @Html.DisplayNameFor(model => model.Ativo)</label>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="row">
+
+                                    <div class="form-group col-sm-6">
+                                        <label asp-for="DataFabricacao" class="control-label"></label>
+                                        <input asp-for="DataFabricacao" type="text" class="form-control datepicker" id="DataFabricacao" data-provide="datepicker" data-date-autoclose="true"
+                                               placeholder="Adicionar data " required />
+                                        <span asp-validation-for="DataFabricacao" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group col-sm-6">
+                                        <label asp-for="DataValidade" class="control-label"></label>
+                                        <input asp-for="DataValidade" type="text" class="form-control datepicker" id="DataValidade" data-provide="datepicker" data-date-autoclose="true"
+                                               placeholder="Adicionar data " required />
+                                        <span asp-validation-for="DataValidade" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" asp-for="ProdutoPromocao" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2"> @Html.DisplayNameFor(model => model.ProdutoPromocao)</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <input type="submit" value="Salvar" class="btn btn-primary" />
+                                    <a class="btn btn-info" asp-action="Index">Voltar</a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+
+</div>
+
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+
+    <script>
+
+
+        function CarregarImagem(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                $('#ImagemProduto').show();
+                reader.onload = function (e) {
+                    $('#ImagemProduto').attr('src', e.target.result).height("136px");
+                }
+            }
+            reader.readAsDataURL(input.files[0]);
+        };
+
+
+    </script>
+}

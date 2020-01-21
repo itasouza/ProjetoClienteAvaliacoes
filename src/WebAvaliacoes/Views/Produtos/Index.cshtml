@@ -1,0 +1,176 @@
+﻿@model IEnumerable<WebAvaliacoes.ViewModels.ProdutoViewModel>
+
+@{
+    ViewData["Title"] = "Listagem Produtos";
+}
+
+
+<p>
+
+</p>
+<!-- Start Content-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title">Lista de Produtos</h4>
+                    <a asp-action="Create" class="btn btn-outline-primary">Adicionar</a>
+                    <p class="card-text">
+
+                    </p>
+
+                    <div class="tab-content">
+
+                        <table id="datatable-buttons" class="table table-striped dt-responsive nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.NomeProduto)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.DescricaoProduto)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ValorProduto)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Ativo)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.DataFabricacao)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.DataValidade)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.FotoProduto)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ProdutoPromocao)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        @if (item.FotoProduto != null)
+                                        {
+                                            <td class="table-user">
+                                                <img src="@Url.Content(item.FotoProduto)" alt="table-user" class="mr-2 rounded-circle" />
+                                                @Html.DisplayFor(modelItem => item.NomeProduto)
+                                            </td>
+                                        }
+                                        else
+                                        {
+                                            <td class="table-user">
+                                                <img src="~/lib/images/avatar-foto.jpg" alt="table-user" class="mr-2 rounded-circle" />
+                                                @Html.DisplayFor(modelItem => item.NomeProduto)
+                                            </td>
+
+                                        }
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NomeProduto)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DescricaoProduto)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ValorProduto)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Ativo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DataFabricacao)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DataValidade)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ProdutoPromocao)
+                                        </td>
+                                        <td class="table-action">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="action-icon" data-toggle="tooltip" data-placement="top" title="Alteração Usuário"><i class="mdi mdi-pencil"></i> </a>
+                                            <a class="action-icon" data-toggle="tooltip" data-placement="top" title="Excluir" onclick="ExibirModal(@item.Id,'@item.NomeProduto')"><i class="uil dripicons-document-delete"></i> </a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+
+
+
+                    </div> <!-- end tab-content-->
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div>
+    <!-- end row-->
+</div>
+<!-- container -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p>Deseja prosseguir com exclusão de <text class="nome font-weight-bold"></text></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
+                <button type="button" class="btn btn-primary btnExcluir">Sim</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@section Scripts {
+<script>
+
+
+    function ExibirModal(idRecebido, nome) {
+
+        $(".nome")[0].innerHTML = nome;
+        $(".modal").modal();
+
+        $(".btnExcluir").on("click", function () {
+
+            $.ajax({
+                method: "POST",
+                url: "/Produtos/Deletar",
+                data: { id: idRecebido },
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    console.log(data);
+                    $(".modal").modal("hide");
+                    location.reload(true);
+                }
+            })
+        });
+
+    };
+
+
+</script>
+}

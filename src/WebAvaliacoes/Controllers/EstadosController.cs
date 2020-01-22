@@ -16,7 +16,7 @@ namespace WebAvaliacoes.Controllers
 {
     public class EstadosController : Controller
     {
-
+        //pesquisar - usar o select comum para selecionar o estado
         private readonly IEstadoRepository _estadoRepository;
         private readonly IMapper _mapper;
 

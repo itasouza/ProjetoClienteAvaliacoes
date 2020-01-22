@@ -105,8 +105,6 @@ C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\WebAva
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\Create.cshtml.g.cs
-C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\Delete.cshtml.g.cs
-C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\Details.cshtml.g.cs
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\Edit.cshtml.g.cs
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Produtos\Index.cshtml.g.cs
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs

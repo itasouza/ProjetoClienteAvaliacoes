@@ -86,9 +86,6 @@ namespace WebAvaliacoes.Controllers
 
             if (!ModelState.IsValid) return View(produtoViewModel);
 
-            if (String.IsNullOrEmpty(produtoViewModel.FotoProduto))
-                produtoViewModel.FotoProduto = produtoViewModel.FotoProduto;
-
             //se tiver imagem nova, vou sobrescrever 
             var imgPrefixo = Guid.NewGuid() + "_";
             var linkUpload = Path.Combine(_hostingEnvironment.WebRootPath, "ImagensPerfil");

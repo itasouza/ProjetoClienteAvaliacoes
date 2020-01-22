@@ -1,4 +1,76 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+$(document).ready(function () {
 
-// Write your JavaScript code.
+    $('.datepicker').datepicker({
+        autoclose: true,
+        format: 'dd/mm/yyyy',
+        defaultDate: new Date(),
+        setDefaultDate: true,
+        disableWeekends: false,
+        showDaysInNextAndPreviousMonths: true,
+        showMonthAfterYear: true,
+        firstDay: 0,
+        showClearBtn: true,
+        i18n: {
+            cancel: 'Cancelar',
+            clear: 'Limpar',
+            done: 'Ok',
+            previousMonth: '‹',
+            nextMonth: '›',
+            months: [
+                'Janeiro',
+                'Fevereiro',
+                'Março',
+                'Abril',
+                'Maio',
+                'Junho',
+                'Julho',
+                'Agosto',
+                'Setembro',
+                'Outubro',
+                'Novembro',
+                'Dezembro'
+            ],
+
+            monthsShort: [
+                'Jan',
+                'Fev',
+                'Mar',
+                'Abr',
+                'Mai',
+                'Jun',
+                'Jul',
+                'Ago',
+                'Set',
+                'Out',
+                'Nov',
+                'Dez'
+            ],
+
+            weekdays: [
+                'Domingo',
+                'Segunda-feira',
+                'Terça-feira',
+                'Quarta-feira',
+                'Quinta-feira',
+                'Sexta-feira',
+                'Sábado'
+            ],
+
+            weekdaysShort: [
+                'Dom',
+                'Seg',
+                'Ter',
+                'Qua',
+                'Qui',
+                'Sex',
+                'Sab'
+            ],
+
+            weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
+        }
+
+    });
+
+});
+

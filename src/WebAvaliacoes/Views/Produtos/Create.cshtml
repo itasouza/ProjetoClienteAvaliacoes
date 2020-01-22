@@ -103,21 +103,21 @@
                                                placeholder="Adicionar data " required />
                                         <span asp-validation-for="DataValidade" class="text-danger"></span>
                                     </div>
-                                </div>
 
+                                    <div class="form-group col-sm-6">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" asp-for="ProdutoPromocao" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"> @Html.DisplayNameFor(model => model.ProdutoPromocao)</label>
+                                        </div>
+                                    </div>
 
-
-                                <div class="form-group mb-3">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" asp-for="ProdutoPromocao" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2"> @Html.DisplayNameFor(model => model.ProdutoPromocao)</label>
+                                    <div class="form-group col-sm-12">
+                                        <input type="submit" value="Salvar" class="btn btn-primary" />
+                                        <a asp-action="Index" class="btn btn-warning">Retornar</a>
                                     </div>
                                 </div>
 
-                                <div class="form-group mb-3">
-                                    <input type="submit" value="Salvar" class="btn btn-primary" />
-                                    <a class="btn btn-info" asp-action="Index">Voltar</a>
-                                </div>
+  
                             </form>
                         </div>
 

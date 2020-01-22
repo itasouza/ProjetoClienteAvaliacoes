@@ -119,3 +119,6 @@ C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\WebAva
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\WebAvaliacoes.csproj.CopyComplete
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\WebAvaliacoes.dll
 C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\WebAvaliacoes.pdb
+C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Estados\Create.cshtml.g.cs
+C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Estados\Edit.cshtml.g.cs
+C:\src\ProjetoClienteAvaliacoes\src\WebAvaliacoes\obj\Debug\netcoreapp2.2\Razor\Views\Estados\Index.cshtml.g.cs

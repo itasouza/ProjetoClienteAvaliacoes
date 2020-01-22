@@ -111,7 +111,7 @@ namespace WebAvaliacoes.Controllers
         public async Task<JsonResult> Deletar(int id)
         {
             await _produtoRepository.Remover(id);
-            return Json("Categoria excluída com sucesso");
+            return Json("Registro excluído com sucesso");
         }
 
 

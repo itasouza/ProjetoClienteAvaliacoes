@@ -12,6 +12,7 @@ namespace WebAvaliacoes.Data
         {
         }
         public DbSet<WebAvaliacoes.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
+        public DbSet<WebAvaliacoes.ViewModels.EstadoViewModel> EstadoViewModel { get; set; }
 
     }
 }

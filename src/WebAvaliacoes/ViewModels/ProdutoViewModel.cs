@@ -6,10 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebAvaliacoes.ViewModels
 {
-    public class ProdutoViewModel
+    public class ProdutoViewModel : EntityViewModel
     {
-        [Key]
-        public int Id { get; set; }
+
 
         [DisplayName("Nome do Produto")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]

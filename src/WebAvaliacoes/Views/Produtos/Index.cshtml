@@ -100,7 +100,7 @@
                                             @Html.DisplayFor(modelItem => item.ProdutoPromocao)
                                         </td>
                                         <td class="table-action">
-                                            <a asp-action="Edit" asp-route-id="@item.Id" class="action-icon" data-toggle="tooltip" data-placement="top" title="Alteração Usuário"><i class="mdi mdi-pencil"></i> </a>
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="action-icon" data-toggle="tooltip" data-placement="top" title="Alteração"><i class="mdi mdi-pencil"></i> </a>
                                             <a class="action-icon" data-toggle="tooltip" data-placement="top" title="Excluir" onclick="ExibirModal(@item.Id,'@item.NomeProduto')"><i class="uil dripicons-document-delete"></i> </a>
                                         </td>
                                     </tr>

@@ -1,0 +1,139 @@
+﻿@model IEnumerable<WebAvaliacoes.ViewModels.EstadoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<p>
+
+</p>
+<!-- Start Content-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title">Lista de Estados</h4>
+                    <a asp-action="Create" class="btn btn-outline-primary">Adicionar</a>
+                    <p class="card-text">
+
+                    </p>
+
+                    <div class="tab-content">
+
+                        <table id="datatable-buttons" class="table table-striped dt-responsive nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Nome)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Sigla)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Ativo)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Nome)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Sigla)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Ativo)
+                                        </td>
+                                        <td class="table-action">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="action-icon" data-toggle="tooltip" data-placement="top" title="Alteração"><i class="mdi mdi-pencil"></i> </a>
+                                            <a class="action-icon" data-toggle="tooltip" data-placement="top" title="Excluir" onclick="ExibirModal(@item.Id,'@item.Nome')"><i class="uil dripicons-document-delete"></i> </a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+
+
+                    </div> <!-- end tab-content-->
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div>
+    <!-- end row-->
+</div>
+<!-- container -->
+
+
+<form asp-action="Create">
+</form>
+
+
+
+
+
+<div id="fill-danger-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-danger-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-danger">
+            <div class="modal-header">
+                <h4 class="modal-title" id="fill-danger-modalLabel">Confirmar Exclusão</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Deseja prosseguir com exclusão de <text class="nome font-weight-bold"></text></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-light btn-Confirmar">Sim</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Não</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+@section Scripts {
+    <script>
+
+
+        function ExibirModal(idRecebido, nome) {
+
+            var t = $("input[name='__RequestVerificationToken']").val();
+            $(".nome")[0].innerHTML = nome;
+            $(".modal").modal();
+
+            $(".btn-Confirmar").on("click", function () {
+
+                $.ajax({
+                    method: "POST",
+                    headers:
+                    {
+                        "RequestVerificationToken": t
+                    },
+                    url: "/Estados/Deletar",
+                    data: { id: idRecebido },
+                    success: function (data) {
+                        console.log(data);
+                        $(".modal").modal("hide");
+                        location.reload(true);
+                    }
+                })
+            });
+
+        };
+
+
+    </script>
+}
